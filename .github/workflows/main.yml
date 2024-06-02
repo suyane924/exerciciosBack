@@ -16,3 +16,7 @@ jobs:
         run: |
           docker run --rm registry.gitlab.com/professor-rvenson/backend-n1-validate validate
 
+      - name: Print student info
+        run: |
+          echo "Student ID: ${{ env.STUDENT_ID }}"
+          echo "Student Name: ${{ env.STUDENT_NAME }}"
