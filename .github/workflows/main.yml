@@ -8,9 +8,6 @@ on:
 jobs:
   review:
     runs-on: ubuntu-latest
-    env:
-      STUDENT_ID: 202222204
-      STUDENT_NAME: Suyane Bonfanti dos Santos
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -21,5 +18,5 @@ jobs:
 
       - name: Print student info
         run: |
-          echo "Student ID: $STUDENT_ID"
-          echo "Student Name: $STUDENT_NAME"
+          echo "Student ID: ${{ secrets.STUDENT_ID }}"
+          echo "Student Name: ${{ secrets.STUDENT_NAME }}"
