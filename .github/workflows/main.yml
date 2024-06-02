@@ -18,5 +18,5 @@ jobs:
 
       - name: Print student info
         run: |
-          echo "Student ID: ${{ secrets.STUDENT_ID }}"
-          echo "Student Name: ${{ secrets.STUDENT_NAME }}"
+          echo "202222204: ${{ secrets.STUDENT_ID }}"
+          echo "Suyane Bonfanti dos Santos: ${{ secrets.STUDENT_NAME }}"
